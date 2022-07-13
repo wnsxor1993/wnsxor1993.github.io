@@ -1,5 +1,8 @@
 <script type="text/javascript">
     //window.location = 'czechgram://';
     let query = location.search;
-    window.location.replace("czechgram://$(query)");
+    let app = 'czechgram://';
+    //window.location.replace("czechgram://$(query)");
+    app.addAttribute("code", $(query));
+    window.location.href = app;
 </script>
