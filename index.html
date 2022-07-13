@@ -1,4 +1,5 @@
 <script type="text/javascript">
     //window.location = 'czechgram://';
-    window.location.replace("czechgram://");
+    let query = location.search;
+    window.location.replace("czechgram://$(query)");
 </script>
